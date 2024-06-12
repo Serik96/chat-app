@@ -15,3 +15,5 @@ async function connectDB() {
     console.error("Error connecting", error);
   }
 }
+
+module.exports = connectDB;
