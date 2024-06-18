@@ -9,10 +9,10 @@ async function connectDB() {
     connection.on("connected", () => console.log("Connect to MongoDB", error));
 
     connection.on("error", (error) =>
-      console.error("Error connection MongoDB", error)
+      console.log("Error connection MongoDB", error)
     );
   } catch (error) {
-    console.error("Error connecting", error);
+    console.log("Error connecting", error);
   }
 }
 
